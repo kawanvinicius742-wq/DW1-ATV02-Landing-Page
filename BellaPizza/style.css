@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+}
+
+/* header{
+  display: flex;
+  position: fixed;
+} */
+
+/* .containerHeader{} */
+
+.navMenu {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(
+    90deg,
+    /* ângulo horizontal */ #5f1705 0%,
+    /* início */ #794903 50%,
+    /* meio (roxo destaque) */ #9e5f01 100% /* fim (azul) */
+  );
+  margin: 0;
+  align-items: center;
+}
+
+.navTitle {
+  color: aliceblue;
+  border: #5f0505;
+  display: flex;
+}
+
+.menu{
+  display: flex;
+}
+
+.menu li  {
+  display: flex;
+  list-style: none;
+}
+
+.menu a{
+  display: flex;
+  text-decoration: none;
+}
+
+.heroSection {
+  background-image: url("/imgs/heroBellaPizza.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 420px;
+  margin: 0%;
+  border-bottom: solid 1px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #2c1810;
+}
+
+.cards {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.card {
+  background-color: aliceblue;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 280px;
+  max-width: 350px;
+  flex: 1;
+  transition: transform 0.5;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* .card-content{
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-content h3{
+  font-size: 1.5rem;
+  color: #2c1810;
+}
+
+.card-content p{
+  color: #666665;
+} */
+
+.sobreIMG {
+  background-image: url("/imgs/sobre.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 420px;
+  margin: 0%;
+  border-bottom: solid 1px;
+  width: 10px;
+}
+
+.sobre {
+  display: flex;
+  gap: 50px;
+}
+
+/* FOOTER */
+
+.footer{
+background: linear-gradient(
+    90deg,
+    /* ângulo horizontal */ #5f1705 0%,
+    /* início */ #794903 50%,
+    /* meio (roxo destaque) */ #9e5f01 100% /* fim (azul) */
+  );  color: aliceblue;
+  padding: 1rem 0 1rem;
+}
+
+.footer-content{
+  display:flex;
+  /* gap: 2rem; */
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-section{
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h4{
+  margin-bottom: 1rem;
+  color: #d4a574;
+}
+
+.footer-bottom{
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #4a3226;
+}
+
+/* RESPONSIVIDADE */
+
+  /* LARGURA APROXIMADA DO MOBILE */
+@media ( max-width: 768px){
+.sobre-flex{
+  flex-direction: column;
+}
+.footer-content{
+  flex-direction: column;
+}
+.logo{
+  font-size: 1rem;
+}
+.menu{
+  gap: 1rem;
+}
+}
