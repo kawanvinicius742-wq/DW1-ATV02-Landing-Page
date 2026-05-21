@@ -111,6 +111,16 @@ body {
   border: 1px solid rgba(156, 60, 251, 0.35);
 }
 
+.conteiner-cards{
+  background: linear-gradient(
+    90deg,
+    #ac6617 0%,
+    #ffffff 50%,
+    #ffffff 100% /* fim (azul) */
+  );
+}
+
+
 .section-title {
   text-align: center;
   font-size: 2.5rem;
@@ -180,9 +190,9 @@ body {
 
   background: linear-gradient(
     90deg,
-    /* ângulo horizontal */ #5f1705 0%,
-    /* início */ #794903 50%,
-    /* meio (roxo destaque) */ #9e5f01 100% /* fim (azul) */
+   #5f1705 0%,
+   #794903 50%,
+   #9e5f01 100% 
   );
 }
 
@@ -207,9 +217,9 @@ body {
   flex-wrap: wrap; */
   background: linear-gradient(
     90deg,
-    /* ângulo horizontal */ #ac6617 0%,
-    /* início */ #ffffff 50%,
-    /* meio (roxo destaque) */ #ffffff 100% /* fim (azul) */
+    #ac6617 0%,
+    #ffffff 50%,
+    #ffffff 100% /* fim (azul) */
   );
 }
 
