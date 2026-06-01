@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
@@ -5,10 +11,11 @@ body {
 .containerHeader {
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 
 .HeaderHero {
-  background-image: url("/imgs/heroBellaPizza.png");
+  background-image: url("/BellaPizza/imgs/heroBellaPizza.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -237,6 +244,9 @@ body {
 
 /* LARGURA APROXIMADA DO MOBILE */
 @media (max-width: 768px) {
+  .navMenu{
+    flex-direction: column;
+}
   .sobre-flex {
     flex-direction: column;
   }
