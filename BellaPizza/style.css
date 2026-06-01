@@ -12,6 +12,8 @@ body {
   position: fixed;
   width: 100%;
   z-index: 999;
+  /* z-index:auto; */
+  justify-content: space-between;
 }
 
 .HeaderHero {
@@ -118,11 +120,23 @@ body {
   border: 1px solid rgba(156, 60, 251, 0.35);
 }
 
+.conteiner-cards{
+  background: linear-gradient(
+    90deg,
+    #ac6617 0%,
+    #ffffff 50%,
+    #ffffff 100% /* fim (azul) */
+  );
+}
+
+
 .section-title {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
   color: #2c1810;
+  margin: 0;
+  padding-top: 30px;
 }
 
 .cards {
@@ -142,6 +156,7 @@ body {
   max-width: 350px;
   flex: 1;
   transition: transform 0.5;
+  text-align: center;
 }
 
 .card:hover {
@@ -187,9 +202,9 @@ body {
 
   background: linear-gradient(
     90deg,
-    /* ângulo horizontal */ #5f1705 0%,
-    /* início */ #794903 50%,
-    /* meio (roxo destaque) */ #9e5f01 100% /* fim (azul) */
+   #5f1705 0%,
+   #794903 50%,
+   #9e5f01 100% 
   );
 }
 
@@ -208,15 +223,15 @@ body {
 
 .footer-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   /* gap: 2rem;
   margin-bottom: 2rem;
   flex-wrap: wrap; */
   background: linear-gradient(
     90deg,
-    /* ângulo horizontal */ #ac6617 0%,
-    /* início */ #ffffff 50%,
-    /* meio (roxo destaque) */ #ffffff 100% /* fim (azul) */
+    #ac6617 0%,
+    #ffffff 50%,
+    #ffffff 100% /* fim (azul) */
   );
 }
 
